@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin: 16px 0px;
+            text-align: center;
+            color: #333;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        h4 {
+            text-align: center;
+            margin: 16px 0px;
+            color: #555;
+        }
+ 
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 100%;
+        }
+       
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+ 
+        section label {
+            display: block;
+            width: 50%;
+        }
+ 
+        section input[type="checkbox"] {
+            display: block;
+        }
+ 
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+ 
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+ 
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+ 
+        #opiniao {
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bem Vindo ao UniAcademia</h2>
+    <h3>Por favor, preencha o formulário abaixo:</h3>
+
+    <form action="processar_formulario.php" method="post">
+        <h4>Dados Pessoais</h4>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" required>
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <h4>Endereço</h4>
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua">
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero">
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro">
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <h4>Preferências</h4>
+        <label for="preferencias">Selecione suas preferências:</label>
+        <section>
+            <label for="jogos">Jogos</label>
+            <input type="checkbox" id="jogos" name="preferencias" value="jogos">
+        </section>
+            <section>
+            <label for="novela">Novela</label>
+            <input type="checkbox" id="novela" name="preferencias" value="novela">
+        </section>
+        <section>
+            <label for="noticias">Notícias</label>
+            <input type="checkbox" id="noticias" name="preferencias" value="noticias">
+        </section>
+
+        <h4>Curso e Período</h4>
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso">
+        <label for="periodo">Período:</label>
+        <input type="text" id="periodo" name="periodo">
+        <h4>Rede Social</h4>
+        <label for="rede_social">Perfil de Rede Social:</label>
+        <input type="text" id="rede_social" name="rede_social">
+        <h4>Opinião</h4>
+        <label for="opiniao">Deixe sua opinião:</label>
+        <textarea id="opiniao" name="opiniao" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>

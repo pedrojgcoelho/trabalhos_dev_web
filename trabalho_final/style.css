@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#menu{
+    height: 12%;
+    display: flex;    
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+#menu > h1{
+    padding-left: 33%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vmax;
+}
+#botao{
+    color: rgb(73, 73, 73);
+    background-color: rgb(29, 29, 233);
+    padding: 10px;
+    border-radius: 100%;
+    width: 30px;
+    top: 80%;
+    right: 100%;
+    left: 70%;
+    margin: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    position:sticky;
+}
+.secao{
+    display: flex;
+    height: 85%;   
+    margin-top:20px ;
+    margin-bottom: 60px;    
+}
+.bloco{
+    margin-left: auto;
+    display: flex;    
+    width: 35%;
+}
+#imagem1{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    padding-top: 20%;
+}
+#laranja{    
+    width: 50%;
+    background-color: rgb(252, 164, 0);    
+}
+.textos{
+    width: 30%;
+    margin-right: auto;
+    height: 80%;
+    background-color: whitesmoke;
+}
+#secao2{
+    height: auto;
+    padding: 7vh;
+    padding-top: 10vh;
+}
+#secao2 > h1{
+    font-size: 3em;
+    padding-bottom: 3vh;
+}
+
+#secao2 > p{
+    font-size: 1.3em;
+    padding-bottom: 3em;
+}
+.btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #e74c3c;
+    color: #171616;
+    display: flex;
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+}
+.a{
+border: 2px solid rgb(19, 19, 18);
+color: black;
+background-color: rgb(255, 255, 255);
+}
+#imagemf {
+    width: 100%;
+    height: 100%;
+    background: url('../Imagens/inverno.png');  
+}
+#imagemf > div{
+    height: auto;
+    text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 16.5vh; 
+
+}
+#imagemf > div > h1{
+    color: white;
+    font-size: 14em;
+}
+
+#imagemf > div > p{
+    margin-top: 2.5vh;
+    font-size: 2em;
+    color: white;
+}
+.b{
+    margin-top: 8vh;
+    margin-left: 45%;
+    border: 2px solid orange;
+    color: black;
+    background-color: orange;
+}
+.imagem{
+    height: auto;
+    height: 50vh;
+    margin-top: 15vh;
+    margin-left:auto;
+}
+
+.imagem > img{
+    size: 1vh;
+}
+
+.texto2{
+    height: auto;
+    height: 100%;
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.texto2 > h1{
+    height: auto;
+    font-size: 3em;
+    padding-bottom: 6vh;
+    margin-left: 10vh;
+    margin-right: 5vh;
+    margin-top: 3vh;
+    text-align:left;
+}
+.texto2 > p{
+    font-size: 18px;
+    text-align:left;
+}
+#rodape{
+    height: auto;
+    height: 6vh;
+    color: aliceblue;
+    text-align: center;    
+}
+#rodape > p{
+    margin: auto;
+    background-color:black;
+    padding-top: 4vh;
+}
+#chat-balloon {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #14389c; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    z-index: 999;
+   
+  }
+  
